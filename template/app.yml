@@ -1,0 +1,19 @@
+API for adding 2 numbers
+---
+tags:
+  - Add 2 numbers
+parameters:
+  - name: numbers_to_add
+    in: body
+    schema:
+      type: object
+      properties:
+       n1:
+        type: string
+       n2:
+        type: string
+responses:
+  500:
+   description: Internal Server Error.
+  200:
+   description: Sum of 2 numbers.
