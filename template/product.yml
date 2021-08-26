@@ -1,19 +1,19 @@
-API for sum of 2 numbers
+API for product of 2 numbers
 ---
 tags:
   - Performing calculations on two numnbers
 parameters:
-  - name: numbers_to_add
+  - name: numbers_to_multiply
     in: body
     schema:
       type: object
       properties:
-       n1:
+       n3:
         type: string
-       n2:
+       n4:
         type: string
 responses:
   500:
    description: Internal Server Error.
   200:
-   description: Sum of 2 numbers.
+   description: Product of 2 numbers.

@@ -20,4 +20,11 @@ def add():
     return jsonify({'sum': addition})
 
 
+@app.route('/multiply', methods=['POST'])
+def product1():
+    input2 = request.json
+    multiplication = int(input2['n3']) + int(input2['n4'])
+    return jsonify({'sum': multiplication})
+
+
 app.run(port=6006, debug=True)
